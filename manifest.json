@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Kalele New Tab",
+  "version": "1.0",
+  "description": "Kalele New Tab.",
+  "author": "Kyan De Sutter",
+  "chrome_url_overrides": {
+    "newtab": "/build/index.html"
+  },
+  "permissions": ["storage", "https://api.nasa.gov/"]
+}
