@@ -59,4 +59,4 @@ You need to make a apikeys.json file in the src directory, and it should look so
 	"wallpapers": "your key here"
 }
 `
-You can get your keys from [open weather map](https://openweathermap.org/api) and [nasa](https://api.nasa.gov/). Obviously my keys are not included in the source code, since this they must remain secret.
+You can get your keys from [open weather map](https://openweathermap.org/api) and [nasa](https://api.nasa.gov/). Obviously my keys are not included in the source code, since they must remain secret.
