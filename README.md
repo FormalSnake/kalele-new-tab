@@ -2,6 +2,10 @@
 
 This is a new tab extension that aims to inspire and focus people, it comes with a simple weather and quote API integration, and it uses random wallpapers from NASA.
 
+## Screenshots
+
+![Scheme](Screenshots/Screenshot1.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
