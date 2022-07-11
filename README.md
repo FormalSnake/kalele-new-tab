@@ -2,6 +2,10 @@
 
 This is a new tab extension that aims to inspire and focus people, it comes with a simple weather and quote API integration, and it uses random wallpapers from NASA.
 
+## Wallpapers
+
+NASA has an API that returns images randomly, but my code lacks optimization, so if NASA selects a very high resolution image, it can take a while to load in, but most web browsers cache it in. They are also not guaranteed to be good images or even fit on your screen correctly, like 4k square images appearing pixelated. If someone wants to, they can help me optimize it.
+
 ## Screenshots
 
 ![Scheme](Screenshots/Screenshot1.png)
@@ -46,3 +50,13 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ## Using the extension
 
 In most of the chromium based web browsers, go to `chrome://extensions` and enable Developer Mode, and then you load unpacked and then you navigate to the [manifest.json](https://bitbucket.org/KynuxGamesInc/kalele/src/master/manifest.json) and it should work! In the future there will be a chrome web store page.
+
+## Setting API keys
+
+You need to make a apikeys.json file in the src directory, and it should look something like this:
+`{
+	"weather": "your key here",
+	"wallpapers": "your key here"
+}
+`
+You can get your keys from [open weather map](https://openweathermap.org/api) and [nasa](https://api.nasa.gov/). Obviously my keys are not included in the source code, since this they must remain secret.

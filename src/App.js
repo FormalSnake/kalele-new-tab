@@ -1,10 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { Fragment, useEffect, useState } from "react";
+import apiKeys from "./apikeys.json"
+
 
 function getDailyWallpaper() {
   return fetch(
-    "https://api.nasa.gov/planetary/apod?api_key=gUUfiAPNdWzCHho63B7rUR9T8NFIXj7JAXQOcCIN"
+    `https://api.nasa.gov/planetary/apod?api_key=${apiKeys.wallpapers}`
   )
     .then((response) => response.json())
     .then((responseJson) => {
@@ -46,7 +48,7 @@ function App() {
     console.log("Latitude is :", position.coords.latitude);
     console.log("Longitude is :", position.coords.longitude);
     return fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=01d8f7605567adca2368852455768179`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKeys.weather}`
     )
       .then((response) => response.json())
       .then((responseJson) => {
