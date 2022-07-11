@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Kalele New Tab",
   "version": "1.0",
   "description": "Kalele New Tab.",
@@ -7,5 +7,5 @@
   "chrome_url_overrides": {
     "newtab": "/build/index.html"
   },
-  "permissions": ["storage", "https://api.nasa.gov/"]
+  "host_permissions": ["storage", "https://api.nasa.gov/"]
 }
