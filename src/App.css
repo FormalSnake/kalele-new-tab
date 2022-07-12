@@ -98,11 +98,20 @@ button:hover {
 .quoteContent,
 .quoteAuthor {
   text-align: center;
-  font-size: 30px;
+  width: 100vh;
+  height: 60px;
+  font-weight: bold;
+}
+
+.quoteContent {
+  font-size: 20px;
+}
+.quoteAuthor {
+  font-size: 25px;
 }
 .quoteContainer {
-  background-color: rgba(32, 32, 32, 0.5);
-  backdrop-filter: blur(5px);
+  /*background-color: rgba(32, 32, 32, 0);
+  backdrop-filter: blur(5px);*/
   border-width: 0px;
   border-radius: 5px;
 }
