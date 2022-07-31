@@ -13,6 +13,9 @@ function getDailyWallpaper() {
     })
     .catch((error) => {
       console.error(error);
+      document.body.style.backgroundImage = `url(../OfflineImages/${Math.round(
+        (19 - 1) * Math.random() + 1
+      )}.jpg)`;
     });
 }
 
@@ -32,8 +35,8 @@ function getDailyWallpaperBing() {
     });
 }
 
-function Nasa() {
+function Wallpaper() {
   getDailyWallpaper();
 }
 
-export default Nasa;
+export default Wallpaper;

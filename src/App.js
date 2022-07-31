@@ -2,12 +2,12 @@ import "./App.css";
 import React from "react";
 import Greeting from "./components/greeting";
 import Weather from "./components/weather";
-import Nasa from "./components/nasa";
+import Wallpaper from "./components/wallpaper";
 import Quote from "./components/quote";
 import SearchBox from "./components/searchBar";
 
 function App() {
-  Nasa();
+  Wallpaper();
   Quote();
 
   return (
