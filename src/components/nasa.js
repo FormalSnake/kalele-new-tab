@@ -16,6 +16,22 @@ function getDailyWallpaper() {
     });
 }
 
+function getDailyWallpaperBing() {
+  return fetch(`https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1`)
+    .then((response) => response.json())
+    .then((responseJson) => {
+      console.log(responseJson.images.url);
+      document.body.style.backgroundImage = `url(${"http://bing.com"} + ${
+        responseJson.images.url
+      })`;
+
+      return responseJson.hdurl;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
 function Nasa() {
   getDailyWallpaper();
 }

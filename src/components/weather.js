@@ -28,7 +28,15 @@ function Weather() {
       });
   });
   console.log(temp);
-  return <div className="Weather">{Math.round(temp - 273.15)}º</div>;
+  if (temp == 0) {
+    return (
+      <div className="Weather" style={{ fontSize: 50 }}>
+        Offline.
+      </div>
+    );
+  } else {
+    return <div className="Weather">{Math.round(temp - 273.15)}º</div>;
+  }
 }
 
 export default Weather;

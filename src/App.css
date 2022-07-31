@@ -23,7 +23,8 @@ body {
 body {
   font: 300 70px/1 "Open Sans";
   color: #d9d9d9;
-  background: #2a2b2e;
+  /*background: #2a2b2e;*/
+  background-image: url(./OfflineImages/pexels-adam-krypel-6498994.jpg);
   /*background-image: url("bg.png");*/
   display: flex;
   align-items: center;

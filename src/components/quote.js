@@ -13,7 +13,7 @@ function Quote() {
       // If the API request failed, log the error to console and update state
       // so that the error will be reflected in the UI.
       console.error(error);
-      setData({ content: "Opps... Something went wrong" });
+      setData({ content: null, author: null });
     }
   }
 
@@ -23,13 +23,21 @@ function Quote() {
   }, []);
 
   if (!data) return null;
-
-  return (
-    <div className="quoteContainer">
-      <div className="quoteContent">"{data.content}"</div>
-      <div className="quoteAuthor">- {data.author}</div>
-    </div>
-  );
+  if (data.content == null && data.author == null) {
+    return (
+      <div className="quoteContainer">
+        <div className="quoteContent" />
+        <div className="quoteAuthor" />
+      </div>
+    );
+  } else {
+    return (
+      <div className="quoteContainer">
+        <div className="quoteContent">"{data.content}"</div>
+        <div className="quoteAuthor">- {data.author}</div>
+      </div>
+    );
+  }
 }
 
 export default Quote;
