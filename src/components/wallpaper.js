@@ -13,7 +13,7 @@ function getDailyWallpaper() {
     })
     .catch((error) => {
       console.error(error);
-      document.body.style.backgroundImage = `url(../OfflineImages/${Math.round(
+      document.body.style.backgroundImage = `url(./OfflineImages/${Math.round(
         (19 - 1) * Math.random() + 1
       )}.jpg)`;
     });
