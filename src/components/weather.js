@@ -29,11 +29,7 @@ function Weather() {
   });
   console.log(temp);
   if (temp == 0) {
-    return (
-      <div className="Weather" style={{ fontSize: 50 }}>
-        Offline.
-      </div>
-    );
+    return <div className="Weather" style={{ fontSize: 30 }}></div>;
   } else {
     return <div className="Weather">{Math.round(temp - 273.15)}º</div>;
   }

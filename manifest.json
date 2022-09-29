@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Kalele New Tab",
   "version": "1.0",
   "description": "Kalele New Tab.",
@@ -10,5 +10,5 @@
   "icons": { "16": "/logo/logo16.png",
            "48": "/logo/logo48.png",
           "128": "/logo/logo128.png" },
-  "host_permissions": ["storage", "https://api.nasa.gov/"]
+  "permissions": ["storage", "https://api.nasa.gov/"]
 }

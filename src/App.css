@@ -39,6 +39,7 @@ body {
   top: 10px;
   right: 10px;
   margin: 50px;
+  font-size: 30px;
 }
 
 #knopkes {
@@ -48,7 +49,7 @@ body {
   color: white;
   border-width: 0px;
   border-radius: 5px;
-  width: 400px;
+  width: 500px;
   height: 30px;
   margin: 0 6px;
   background: url("https://cdn-icons-png.flaticon.com/512/2991/2991148.png")
@@ -57,6 +58,9 @@ body {
   background-size: 15px;
   padding-left: 30px;
   backdrop-filter: blur(5px);
+  position: absolute;
+  top: 60px;
+  margin: 50px;
 }
 #textBox:hover {
   background-color: rgba(37, 37, 37, 0.9);
@@ -119,5 +123,9 @@ button:hover {
 #greetings {
   font-weight: bold;
   text-align: center;
-  font-size: 60px;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 50px;
 }
