@@ -6,10 +6,10 @@ function getDailyWallpaper() {
   )
     .then((response) => response.json())
     .then((responseJson) => {
-      console.log(responseJson.hdurl);
+      console.log(responseJson.title);
       document.body.style.backgroundImage = `url(${responseJson.hdurl})`;
 
-      return responseJson.hdurl;
+      return responseJson.hdurl, responseJson.title;
     })
     .catch((error) => {
       console.error(error);
