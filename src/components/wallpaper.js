@@ -36,7 +36,7 @@ function getDailyWallpaperBing() {
 }
 
 function Wallpaper() {
-  getDailyWallpaper();
+  //getDailyWallpaper();
 }
 
 export default Wallpaper;
