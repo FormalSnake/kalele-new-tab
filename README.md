@@ -8,7 +8,7 @@ NASA has an API that returns images randomly, but my code lacks optimization, so
 
 ## Screenshots
 
-![Scheme](Screenshots/Screenshot1.png)
+![Scheme](Screenshots/Screenshot2.png)
 
 ## Available Scripts
 
