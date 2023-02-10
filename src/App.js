@@ -5,7 +5,7 @@ import Weather from "./components/weather";
 import Wallpaper from "./components/wallpaper";
 import Quote from "./components/quote";
 import SearchBox from "./components/searchBar";
-import ImageUploader from "./components/imageuploader";
+import Settings from "./components/settings";
 
 function App() {
   Wallpaper();
@@ -17,7 +17,7 @@ function App() {
       <Greeting />
       <SearchBox />
       <Quote />
-      <ImageUploader />
+      <Settings />
     </div>
   );
 }

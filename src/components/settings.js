@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const ImageUploader = () => {
+const Settings = () => {
   const [imagePreview, setImagePreview] = useState("");
   const [showInput, setShowInput] = useState(false);
 
@@ -8,7 +8,7 @@ const ImageUploader = () => {
     // Retrieve the saved wallpaper from chrome.storage
     // eslint-disable-next-line no-undef
     chrome.storage.local.get("wallpaper", (data) => {
-      //setImagePreview(data.wallpaper || "");
+      setImagePreview(data.wallpaper || "");
       document.body.style.backgroundImage = `url(${data.wallpaper})`;
     });
   }, []);
@@ -36,16 +36,21 @@ const ImageUploader = () => {
         onClick={() => setShowInput(!showInput)}
         style={{ position: "fixed", bottom: "0", right: "0" }}
       >
-        {showInput ? "Close" : "Upload Image"}
+        {showInput ? "Close" : "Settings"}
       </button>
       {showInput && (
         <div id="previewbg">
-          <div className="quoteContent">Select background image:</div>
-          <input type="file" onChange={handleImageChange} />
+          <div className="settingsTitle">Settings:</div>
+          <div className="settingsSubTitle">Change wallpaper:</div>
+          <input
+            type="file"
+            className="fileInput"
+            onChange={handleImageChange}
+          />
         </div>
       )}
     </div>
   );
 };
 
-export default ImageUploader;
+export default Settings;

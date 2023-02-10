@@ -141,4 +141,39 @@ button:hover {
   border-radius: 5px;
   width: 700px;
   height: 300px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.settingsTitle {
+  font-size: 30px;
+  padding: 10px;
+}
+.settingsSubTitle {
+  font-size: 20px;
+  padding: 10px;
+}
+.fileInput {
+  width: 50%;
+  height: 50%;
+
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
+.fileInput::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.fileInput::before {
+  padding: 10px;
+  color: white;
+  align-items: center;
+  content: "Select your wallpaper";
+  display: inline-block;
+  background-color: #111013;
+  border-radius: 5px;
+  text-align: center;
 }
